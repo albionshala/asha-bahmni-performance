@@ -11,10 +11,10 @@ This test is performed with the sole purpose of stress-testing Bahmni itself wit
  ## VM Specs
 Bahmni is hosted in a VM and for this test, this VM consists of the specs stated below:
 
-**CPU**: 8 CPU(s)
-**RAM**: 16GB
-**Hard disk 1**: 100GB
-**Hard disk 2**: 100GB
+ - **CPU**: 8 CPU(s) 
+ - **RAM**: 16GB
+ - **Hard disk 1**: 100GB 
+ - **Hard disk 2**: 100GB
 
 ## Installing Tools
 
@@ -53,9 +53,9 @@ Important testing variables:
 2. The scenario has **0ms** ramp up time, meaning all of the threads will try to become active instantaneously. This is not representative of a real-life scenario but rather of an absolute worst case one
 
 More detailed reports: 
- - 50 Concurrent Users: [50.zip](https://github.com/albionshala/asha-bahmni-performance/files/9467794/50.zip)
- - 100 Concurrent Users: [100.zip](https://github.com/albionshala/asha-bahmni-performance/files/9467796/100.zip)
- - 150 Concurrent Users: [150.zip](https://github.com/albionshala/asha-bahmni-performance/files/9467799/150.zip)
+ - **50** Concurrent Users: [50.zip](https://github.com/albionshala/asha-bahmni-performance/files/9467794/50.zip)
+ - **100** Concurrent Users: [100.zip](https://github.com/albionshala/asha-bahmni-performance/files/9467796/100.zip)
+ - **150** Concurrent Users: [150.zip](https://github.com/albionshala/asha-bahmni-performance/files/9467799/150.zip)
 
 ### 50 Concurrent Users
 No functional requests fail.
