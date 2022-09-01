@@ -1,6 +1,4 @@
-# asha-bahmni-performance
-
-## Purpose of the test
+# Bahmni Performance Tester
 This test is performed with the sole purpose of stress-testing Bahmni itself with certain specs of the VM where it is hosted in order to find out how it behaves (in terms of resource consumption, performance, etc.) when multiple concurrent users (up to 150).
 
 ## Tools used to perform the test
