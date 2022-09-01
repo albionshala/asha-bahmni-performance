@@ -1,7 +1,7 @@
 # asha-bahmni-performance
 
 ## Purpose of the test
-This test is performed with the sole purpose of stress-testing Bahmni itself with certain specs of the VM where it is hosted in order to find out how it behaves (in terms of resource consumption, performance, etc.) when multiple concurrent users (up to 200).
+This test is performed with the sole purpose of stress-testing Bahmni itself with certain specs of the VM where it is hosted in order to find out how it behaves (in terms of resource consumption, performance, etc.) when multiple concurrent users (up to 150).
 
 ## Tools used to perform the test
  - **JMeter** was used as an Apache project that can be used as a load testing tool for analyzing and measuring the performance of Bahmni (https://jmeter.apache.org/)
@@ -40,23 +40,22 @@ How to install JMeter: https://youtu.be/rV3H-ZFHz2g
 
 ### MAIN Scenario: Performing a patient consultation
 
-XXXXXX
+[create_encounter.txt](https://github.com/albionshala/asha-bahmni-performance/files/9467929/create_encounter.txt)
+
+note: make sure to convert it to **.jmx** if you want to test it out with JMETER
 
 ## RESULTS
 
-Main Scenario: 
-
 Important testing variables:
 
+1. The scenario has a "Think Time" attached to it, as recommended [here](https://dzone.com/articles/tips-and-tricks-to-compose-the-most-effective-apac#:~:text=buy%20the%20product.-,Add%20%E2%80%9CThink%20Time%E2%80%9D,-When%20real%20users). Constant delay is set to 200ms, Random Delay Max. is set to 500ms.
 
-The scenario has a "Think Time" attached to it, as recommended [here](https://dzone.com/articles/tips-and-tricks-to-compose-the-most-effective-apac#:~:text=buy%20the%20product.-,Add%20%E2%80%9CThink%20Time%E2%80%9D,-When%20real%20users). Constant delay is set to 200ms, Random Delay Max. is set to 500ms.
-
-The scenario has **0ms** ramp up time, meaning all of the threads will try to become active instantaneously. This is not representative of a real-life scenario but rather of an absolute worst case one
+2. The scenario has **0ms** ramp up time, meaning all of the threads will try to become active instantaneously. This is not representative of a real-life scenario but rather of an absolute worst case one
 
 More detailed reports: 
-50 Concurrent Users: [50.zip](https://github.com/albionshala/asha-bahmni-performance/files/9467794/50.zip)
-100 Concurrent Users: [100.zip](https://github.com/albionshala/asha-bahmni-performance/files/9467796/100.zip)
-150 Concurrent Users: [150.zip](https://github.com/albionshala/asha-bahmni-performance/files/9467799/150.zip)
+ - 50 Concurrent Users: [50.zip](https://github.com/albionshala/asha-bahmni-performance/files/9467794/50.zip)
+ - 100 Concurrent Users: [100.zip](https://github.com/albionshala/asha-bahmni-performance/files/9467796/100.zip)
+ - 150 Concurrent Users: [150.zip](https://github.com/albionshala/asha-bahmni-performance/files/9467799/150.zip)
 
 ### 50 Concurrent Users
 No functional requests fail.
